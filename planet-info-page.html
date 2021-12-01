@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="has-background-dark">
+<head>
+    <style>
+        html {
+            background-image: url(background.jpg);
+            background-position: center center;
+            background-attachment: fixed;
+            background-size:  cover;
+            background-color: #999
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+    <title>Create Your Planet</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-white has-text-centered">
+                Create <span class="has-text-info">Your</span> Planet
+            </h1>
+            <h2 class="subtitle has-text-grey-light has-text-centered is-italic">
+                Design your Youtopia!
+            </h2>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-fifth"></div>
+                <div class="column is-three-fifths">
+                    <div class="field">
+                        <label class="label has-text-white has-text-centered">Name <span class="has-text-info">your</span> planet!</label>
+                        <div class="control">
+                            <input class="input" id="input-text" type="text" placeholder="Youtopia" name="planet_name">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-white has-text-centered">What species lives on <span class="has-text-info">your</span> planet?</label>
+                        <div class="control">
+                            <input class="input" id="input-text" type="text" placeholder="Wookies" name="dominant_species">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-white has-text-centered">What type of planet is <span class="has-text-info">your</span> planet?</label>
+                        <div class="has-text-centered">
+                            <div class="select">
+                                <select name="planet_type">
+                                    <option>Desert</option>
+                                    <option>Tundra</option>
+                                    <option>Forest</option>
+                                    <option>Island</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-fifth"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="field">
+            <div class="has-text-centered">
+                <button class="button is-info" type="create">Create my planet!</button>
+            </div>
+        </div>
+    </section>
+</body>
