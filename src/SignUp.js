@@ -5,6 +5,9 @@ class SignUp extends React.Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleUserInput = this.handleUserInput(bind);
+        this.handlePassInput = this.handlePassInput(bind);
+        this.handleConfirmInput = this.handleConfirmInput(bind);
         this.state = {
             username: "",
             password: "",
