@@ -9,11 +9,11 @@ class SignUp extends React.Component {
             <div class="columns">
                 <div class="column is-one-third is-offset-one-third">
                     <div class="box">
-                    <form>
+                    <form action="/api/newuser" method="POST">
                         <div class="field">
                             <label class="label">Username</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Username" name="Username" />
+                                <input class="input" type="text" placeholder="Username" name="username" />
                             </div>
                         </div>
                         <div class="field">
