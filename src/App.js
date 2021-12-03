@@ -4,8 +4,8 @@ import { Counter } from './features/counter/Counter';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
-import { Li } from 'react-router-dom';
-import { Route } from 'react-router-dom';  
+import { Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';  
 import Home from './Home';
 import Login from './Login';
 import SignUp from './SignUp';
@@ -16,7 +16,7 @@ function App() {
   const [home, setHome] = useState(true);
   
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <header className="App-header">
           <Routes>
@@ -25,7 +25,7 @@ function App() {
           </Routes>
         </header>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
