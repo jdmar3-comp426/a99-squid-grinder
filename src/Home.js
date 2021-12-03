@@ -24,10 +24,6 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <Routes>
-                        <Route path="/login" element={<Login />}></Route>
-                        <Route path="/signup" element={<SignUp />}></Route>
-                    </Routes>
                 </div>
             </div>
             );

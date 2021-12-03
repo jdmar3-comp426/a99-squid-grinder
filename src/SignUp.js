@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class SignUp extends React.Component {
     render() { 
@@ -29,7 +30,9 @@ class SignUp extends React.Component {
                         </div>
                         <div class="field has-text-centered">
                             <div class="control">
-                                <button class="button is-dark" type="submit">Confirm</button>
+                                <button class="button is-dark" type="submit">
+                                    <Link to="/clicker">Submit</Link>
+                                </button>
                             </div>
                         </div>
                     </form>
