@@ -5,10 +5,14 @@
   "main": "index.js",
   "dependencies": {
     "better-sqlite3": "^7.4.5",
+    "bootstrap": "^5.1.3",
     "browser-sync": "^2.27.7",
     "bulma": "^0.9.3",
+    "create-react-app": "^4.0.3",
     "express": "^4.17.1",
-    "md5": "^2.3.0"
+    "md5": "^2.3.0",
+    "react-router": "^6.0.2",
+    "react-router-dom": "^6.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
