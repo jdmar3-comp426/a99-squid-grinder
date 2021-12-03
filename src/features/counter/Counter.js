@@ -9,6 +9,7 @@ import {
   selectCount,
 } from './counterSlice';
 import styles from './Counter.module.css';
+import power_button from '../../power-button.jpeg';
 
 export function Counter() {
   const count = useSelector(selectCount);
@@ -19,6 +20,7 @@ export function Counter() {
 
   return (
     <div>
+      <img src={power_button} className="App-logo" alt="logo" />
       <div className={styles.row}>
         <button
           className={styles.button}
