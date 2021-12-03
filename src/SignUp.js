@@ -42,7 +42,7 @@ class SignUp extends React.Component {
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(req)
         };
-        fetch('/api/newuser', requestOptions).then(() => {
+        fetch('http://localhost:3000/api/newuser', requestOptions).then(() => {
             console.log("New user added.")
         });
     }

@@ -26,10 +26,10 @@ let interactionSchema = mongoose.Schema({
 let User = mongoose.model("User", userSchema);
 let Inter = mongoose.model("Inter", interactionSchema);
 
-app.post("/api/newuser", bodyParser.urlencoded({extended: false}), (req, res) => {
-    let inputUsername = req.body.username;
-    let inputPassword = req.body.password;
-    let inputConfrim = req.body.confirmpass;
+app.post("/api/newuser", (req, res) => {
+    let inputUsername = req.username;
+    let inputPassword = req.password;
+    let inputConfrim = req.confirmpass;
     User.findOne({username: inputUsername}, (err, data) => {
         if (!err && data == undefined) {
             User.findOneAndUpdate({username: inputUsername}, {password: inputPassword}, {new: true, upsert: true}, (err, data) => {
