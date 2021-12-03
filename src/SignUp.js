@@ -2,6 +2,18 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class SignUp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    handleSubmit() {
+        const requestOptions = {
+            method: "POST",
+            headers: {"Content-Type": "api/newuser"},
+            body: JSON.stringify({title: "POST request"})
+        };
+        fetch('/api/newuser', requestOptions).then(response => response.json());
+    }
     render() { 
         return (
         <div className="SignUp">
@@ -9,7 +21,7 @@ class SignUp extends React.Component {
             <div class="columns">
                 <div class="column is-one-third is-offset-one-third">
                     <div class="box">
-                    <form action="/api/newuser" method="POST">
+                    <form onSubmit={this.handleSubmit()}>
                         <div class="field">
                             <label class="label">Username</label>
                             <div class="control">
@@ -46,5 +58,7 @@ class SignUp extends React.Component {
             );
     }
 }
- 
+
+
+
 export default SignUp;
