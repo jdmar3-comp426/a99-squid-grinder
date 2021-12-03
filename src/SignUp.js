@@ -5,14 +5,43 @@ class SignUp extends React.Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.state = {
+            username: "",
+            password: "",
+            confirmpass: ""
+        }
     }
-    handleSubmit() {
+    handleUserInput(event) {
+        this.setState({
+            username: event.target.value
+        });
+    }
+    handlePassInput(event) {
+        this.setState({
+            password: event.target.value
+        });
+    }
+    handleConfirmInput(event) {
+        this.setState({
+            confirmpass: event.target.value
+        });
+    }
+    handleSubmit(event) {
+        event.preventDefault();
+        const req = {
+            username: this.state.username,
+            password: this.state.password,
+            confirmpass: this.state.confirmpass
+        }
+
         const requestOptions = {
             method: "POST",
-            headers: {"Content-Type": "api/newuser"},
-            body: JSON.stringify({title: "POST request"})
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(req)
         };
-        fetch('/api/newuser', requestOptions).then(response => response.json());
+        fetch('/api/newuser', requestOptions).then(() => {
+            console.log("New user added.")
+        });
     }
     render() { 
         return (
@@ -21,23 +50,23 @@ class SignUp extends React.Component {
             <div class="columns">
                 <div class="column is-one-third is-offset-one-third">
                     <div class="box">
-                    <form onSubmit={this.handleSubmit()}>
+                    <form onSubmit={this.handleSubmit}>
                         <div class="field">
                             <label class="label">Username</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Username" name="username" />
+                                <input onChange={this.handleUserInput} />
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Password</label>
                             <div class="control">
-                                <input class="input" type="password" placeholder="Password" name="password" />
+                                <input onChange={this.handlePassInput} />
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Confirm Password</label>
                             <div class="control">
-                                <input class="input" type="password" placeholder="Confirm Password" name="confirmpass" />
+                                <input onChange={this.handleConfirmInput} />
                             </div>
                         </div>
                         <div class="field has-text-centered">
