@@ -9,6 +9,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './Home';
 import Login from './Login';
 import SignUp from './SignUp';
+import Background from './Background';
 
 
 function App() {
@@ -22,8 +23,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/clicker" element={<Counter />}></Route>
-            <Route path="/login" element={<Login />}></Route>
-            <Route path="/signup" element={<SignUp />}></Route>
+            <Route path="/login" element={<><Background /><Login /></>}></Route>
+            <Route path="/signup" element={<><Background /><SignUp /></>}></Route>
           </Routes>
         </header>
       </div>
