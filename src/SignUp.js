@@ -54,19 +54,19 @@ class SignUp extends React.Component {
                         <div class="field">
                             <label class="label">Username</label>
                             <div class="control">
-                                <input name="username"onChange={this.handleUserInput} />
+                                <input name="username" type="text" className="control" onChange={this.handleUserInput} />
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Password</label>
                             <div class="control">
-                                <input name="password" onChange={this.handlePassInput} />
+                                <input name="password" type="text" className="control" onChange={this.handlePassInput} />
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Confirm Password</label>
                             <div class="control">
-                                <input name="confirmpass" onChange={this.handleConfirmInput} />
+                                <input name="confirmpass" type="text" className="control" onChange={this.handleConfirmInput} />
                             </div>
                         </div>
                         <div class="field has-text-centered">
