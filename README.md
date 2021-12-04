@@ -10,7 +10,7 @@ To set up the game, clone the repository. Open a new terminal in the directory c
 
 ## Run Instructions
 
-Run `npm run start` in the terminal to launch the game in your browser. Log in using your google account. If you would like to view or change your username or password, click "Account." Then, proceed to click and increment forever!
+Run `npm start` in the terminal to launch the game in your browser. If your browser doesn't automatically open, manually navigate to http://localhost:3000/app/. Log in using your google account. If you would like to view or change your username or password, click "Account." Then, proceed to click and increment forever!
 
 ## Complete Documentation
 
