@@ -4,3 +4,5 @@ The dependencies required for the game are:
   react
   react-scripts
   react-router-dom
+  
+Install the most updated version of each module. 
