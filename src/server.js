@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-var bodyParser = require("bodyParser)");
+var bodyParser = require("bodyParser");
 var mongoose = require("mongoose");
 mongoose.connect("mongodb+srv://new-user-0:testpassword@cluster0.horro.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
