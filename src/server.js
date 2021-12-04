@@ -52,7 +52,7 @@ app.post("/api/newuser", (req, res) => {
         if (!err && data == undefined) {
             Inter.findOneAndUpdate({username: inputUsername}, {num: 0, loginHistory: new Date()}, {new: true, upsert: true}, (err, data) => {
                 if (!err) {
-                    res.redirect("/clicker");
+                    res.json({"username": inputUsername});
                 };
             });
         };
