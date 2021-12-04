@@ -1,5 +1,7 @@
+import { assertExpressionStatement } from '@babel/types';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 class SignUp extends React.Component {
     constructor(props) {
@@ -37,14 +39,9 @@ class SignUp extends React.Component {
             confirmpass: this.state.confirmpass
         }
 
-        const requestOptions = {
-            method: "POST",
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(req)
-        };
-        fetch('https://a99-squid-grinder.duncanmills1.repl.co/api/newuser', requestOptions).then(() => {
-            console.log("New user added.")
-        });
+        axios.post('https://a99-squid-grinder.duncanmills1.repl.co/api/newuser', req).then(() => {
+            console.log("New user created.")
+        }).catch((err) => {console.log(err)});
     }
     render() { 
         return (
@@ -57,19 +54,19 @@ class SignUp extends React.Component {
                         <div class="field">
                             <label class="label">Username</label>
                             <div class="control">
-                                <input onChange={this.handleUserInput} />
+                                <input name="username"onChange={this.handleUserInput} />
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Password</label>
                             <div class="control">
-                                <input onChange={this.handlePassInput} />
+                                <input name="password" onChange={this.handlePassInput} />
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Confirm Password</label>
                             <div class="control">
-                                <input onChange={this.handleConfirmInput} />
+                                <input name="confirmpass" onChange={this.handleConfirmInput} />
                             </div>
                         </div>
                         <div class="field has-text-centered">
