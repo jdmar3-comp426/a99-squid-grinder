@@ -39,7 +39,7 @@ class SignUp extends React.Component {
             confirmpass: this.state.confirmpass
         }
 
-        axios.post('https://a99-squid-grinder.duncanmills1.repl.co/api/newuser', req).then(() => {
+        axios.post('/api/newuser', req).then(() => {
             console.log("New user created.")
         }).catch((err) => {console.log(err)});
     }

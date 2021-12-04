@@ -37,7 +37,7 @@ let interactionSchema = mongoose.Schema({
 let User = mongoose.model("User", userSchema);
 let Inter = mongoose.model("Inter", interactionSchema);
 
-app.post("/api/newuser", (req, res) => {
+app.post('/api/newuser', (req, res) => {
     let inputUsername = req.body.username;
     let inputPassword = req.body.password;
     let inputConfrim = req.body.confirmpass;
