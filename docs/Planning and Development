@@ -1,0 +1,14 @@
+1. Front End
+	- home page: login and sign-up buttons, icon
+	- login page: field for username and password, submit button
+	- signup page: field for username, password, and confirm password, submit button
+	- clicker page: current value, dropdown for increment amount, button to increment
+	
+2. Back End
+	a. Database
+		- user database: stores user, password, ID
+		- game database: stores user, current score, ID
+	b. API
+		- app/login.js: check that user and password match a database entry, initialize clicker page with user's current score based on entry in game databse
+		- app/signup.js: create new user and password entry in user database, initialize clicker page with score 0
+		- app/clicker.js: update user's score in game database everytime increment button is pressed
