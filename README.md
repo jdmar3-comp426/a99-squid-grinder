@@ -2,7 +2,7 @@
 
 # Invincible Incrementer
 
-This is a super fun game! Choose an increment value and increment your counter. Just click the buttons and increment forever! Users have the option to view and update their account information including their username and password. Best game ever honestly.
+This is a super fun game! Choose an increment value and increment your counter. Just click the buttons and increment forever! Users have the option to view and update their account information including their display name, or delete their account. Best game ever honestly.
 
 ## Setup
 
