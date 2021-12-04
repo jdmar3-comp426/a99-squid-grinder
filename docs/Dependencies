@@ -1,1 +1,7 @@
-
+The dependencies required for the game are:
+  firebase 
+  firebase-tools
+  react
+  react-scripts
+  react-router-dom
+  
