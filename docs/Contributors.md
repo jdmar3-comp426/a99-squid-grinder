@@ -1,8 +1,8 @@
-- ushnonc		Ushno Chakraborty
-- jmange33		Jake Mangeney
+- ushnonc	Ushno Chakraborty
+- jmange33	Jake Mangeney
 - andrewmahn	Andrew Mahn
-- nicool13		Nicole Sherman
-- dfmills44		Duncan Mills
+- nicool13	Nicole Sherman
+- dfmills44	Duncan Mills
 
 Roles:
 	front-end lead: Andrew Mahn
