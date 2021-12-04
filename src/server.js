@@ -26,7 +26,7 @@ let interactionSchema = mongoose.Schema({
 let User = mongoose.model("User", userSchema);
 let Inter = mongoose.model("Inter", interactionSchema);
 
-app.post("/api/newuser", (req, res) => {
+app.post("'https://a99-squid-grinder.duncanmills1.repl.co/api/newuser'", (req, res) => {
     let inputUsername = req.username;
     let inputPassword = req.password;
     let inputConfrim = req.confirmpass;
