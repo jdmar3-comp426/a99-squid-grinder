@@ -1,14 +1,14 @@
 1. Front End
-	- home page: login and sign-up buttons, icon
-	- login page: field for username and password, submit button
-	- signup page: field for username, password, and confirm password, submit button
-	- clicker page: current value, dropdown for increment amount, button to increment
+	- home page: login button, allows login authentication with google account
+	- clicker page: counter value, dropdown for increment amount, buttons to increment value, counter updates with increment
+	- account page: text boxes to change username and password, options to view username, password, UID, and updated counter value
 	
 2. Back End
 	a. Database
-		- user database: stores user, password, ID
-		- game database: stores user, current score, ID
+		- Database created on Firebase platform
+		- Stores username, password, UID, updated counter value
 	b. API
-		- app/login.js: check that user and password match a database entry, initialize clicker page with user's current score based on entry in game databse
-		- app/signup.js: create new user and password entry in user database, initialize clicker page with score 0
-		- app/clicker.js: update user's score in game database everytime increment button is pressed
+		- /app/: user logs in with google account, API authenticates google account information, new database entry is created for user in Firebase
+		if the user has never logged in before
+		- /app/clicker: update user's score in game database everytime increment button is pressed
+		- /app/account: retreive user information from Firebase and display username, password, and updated counter value
