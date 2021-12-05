@@ -4,6 +4,8 @@
 
 This is a super fun game! Choose an increment value and increment your counter. Just click the buttons and increment forever! Users have the option to view and update their account information including their username and password. Best game ever honestly.
 
+This is a demo of the game and features available: https://youtu.be/YSgsUolHJT4
+
 ## Setup
 
 To set up the game, clone the repository. Open a new terminal in the directory containing the cloned repo. Run `npm install` to install all required [dependencies](/docs/Dependencies). 
