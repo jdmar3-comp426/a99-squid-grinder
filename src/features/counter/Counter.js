@@ -10,6 +10,7 @@ import {
 } from './counterSlice';
 import styles from './Counter.module.css';
 import power_button from '../../power-button.jpeg';
+import { Link } from 'react-router-dom';
 
 export function Counter() {
   const count = useSelector(selectCount);
@@ -20,6 +21,7 @@ export function Counter() {
 
   return (
     <div>
+      <button><Link to="/app/account">Account</Link></button>
       <img src={power_button} className="App-logo" alt="logo" />
       <div className={styles.row}>
         <button

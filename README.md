@@ -4,13 +4,15 @@
 
 This is a super fun game! Choose an increment value and increment your counter. Just click the buttons and increment forever! Users have the option to view and update their account information including their display name, or delete their account. Best game ever honestly.
 
+This is a demo of the game and features available: https://youtu.be/YSgsUolHJT4
+
 ## Setup
 
 To set up the game, clone the repository. Open a new terminal in the directory containing the cloned repo. Run `npm install` to install all required [dependencies](/docs/Dependencies). 
 
 ## Run Instructions
 
-Run `npm start` in the terminal to launch the game in your browser. If your browser doesn't automatically open, manually navigate to http://localhost:3000/app/. Log in using your google account. If you would like to view or change your username or password, click "Account." Then, proceed to click and increment forever!
+Run `npm start` in the terminal to launch the game in your browser. If your browser doesn't automatically open, manually navigate to http://localhost:3000/app/. Log in using your google account. If you would like to view your score or change your display name, click "Account." Then, proceed to click and increment forever!
 
 ## Complete Documentation
 

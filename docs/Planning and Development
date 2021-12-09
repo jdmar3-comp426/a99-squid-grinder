@@ -10,5 +10,5 @@
 	b. API
 		- /app/: user logs in with google account, API authenticates google account information, new database entry is created for user in Firebase
 		if the user has never logged in before
-		- /app/clicker: update user's score in game database everytime increment button is pressed
-		- /app/account: retreive user information from Firebase and display username, password, and updated counter value
+		- /app/clicker: update user's score in game database everytime submit button is pressed
+		- /app/account: retreive user information from Firebase and show display name, allows user to change display name and delete account from database
