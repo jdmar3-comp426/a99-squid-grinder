@@ -1,0 +1,14 @@
+1. Front End
+	- home page: login button, allows login authentication with google account
+	- clicker page: counter value, dropdown for increment amount, buttons to increment value, counter updates with increment
+	- account page: text boxes to change username and password, options to view username, password, UID, and updated counter value
+	
+2. Back End
+	a. Database
+		- Database created on Firebase platform
+		- Stores username, password, UID, updated counter value
+	b. API
+		- /app/: user logs in with google account, API authenticates google account information, new database entry is created for user in Firebase
+		if the user has never logged in before
+		- /app/clicker: update user's score in game database everytime submit button is pressed
+		- /app/account: retreive user information from Firebase and show display name, allows user to change display name and delete account from database
